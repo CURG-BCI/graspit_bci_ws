@@ -19,19 +19,23 @@ The following is the procedure to set up the workspace for the Shape Completion 
   ```
   wstool update
   ```
-
-4.  Source ros :
-
+  
+4. Change the version of graspIt! to the bci project version it only has small changes, a new world file and default configurations for building.
+  
   ```
-  source /opt/ros/indigo/setup.bash
+  cd /src/grasit-ros/graspit
+  rm -rf graspit_source 
+  git clone https://github.com/CURG-BCI/graspit.git graspit_source
   ```
+
   
 5. Build project:
 
   ```
+  source /opt/ros/indigo/setup.bash
   catkin_make
   ```
-5. run project:
+6. run project:
 
   ```
   source devel/setup.bash
