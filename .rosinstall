@@ -1,0 +1,5 @@
+
+- git: {local-name: src/graspit-ros, uri: 'git@github.com:CURG-BCI/graspit-ros.git', version: master}
+- git: {local-name: src/graspit_bci_plugin, uri: 'git@github.com:CURG-BCI/graspit_bci_plugin.git', version: master}
+- git: {local-name: src/graspit_msgs, uri: 'git@github.com:CURG-BCI/graspit_msgs.git', version: master}
+
