@@ -12,7 +12,7 @@ The following is the procedure to set up the workspace for the Shape Completion 
 
   ```
   git clone https://github.com/CURG-BCI/graspit_bci_ws.git
-  cd graspit_bci_ws/
+  cd graspit_bci_ws/src
   ```
 3. Run wstool update. This will clone all the other dependent repositories listed in the .rosinstall file into that workspace
   
@@ -20,22 +20,30 @@ The following is the procedure to set up the workspace for the Shape Completion 
   wstool update
   ```
   
-4. Change the version of graspIt! to the bci project version it only has small changes, a new world file and default configurations for building.
+4. Initialize the ROS workspace
+  
+  ```
+  source /opt/ros/indigo/setup.bash
+  cd src
+  catkin_init_workspace
+  ```
+  
+5. Change the version of graspIt! to the bci project version it only has small changes, a new world file and default configurations for building.
   
   ```
   cd /src/grasit-ros/graspit
   rm -rf graspit_source 
   git clone https://github.com/CURG-BCI/graspit.git graspit_source
   ```
-
   
-5. Build project:
+6. Build project:
 
   ```
+  cd graspit_bci_ws
   source /opt/ros/indigo/setup.bash
   catkin_make
   ```
-6. run project:
+7. run project:
 
   ```
   source devel/setup.bash
