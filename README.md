@@ -7,7 +7,12 @@ Top level repo for BCI Graspit Project
 ## Setup
 The following is the procedure to set up the workspace for the Shape Completion project.
 
-1. Install the dependencies mentioned above under the subsection "Should be manually installed before setup."
+1. Install ROS and Graspit dependencies.
+ ```
+  http://wiki.ros.org/indigo/Installation/Ubuntu
+  http://www.cs.columbia.edu/~cmatei/graspit/html-manual/graspit-manual_2.html#id1
+  ```
+  
 2. Clone this repository into your workspace.
 
   ```
